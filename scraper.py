@@ -47,7 +47,6 @@ for id in identifiers:
 			port=SOCKS_PORT)
 		socket.socket = socks.socksocket
 		page_url = 'https://www.discogs.com/release/'+str(id)+'/images'
-		print(page_url)
 		time.sleep(2)
 		try:
 			page = urllib.request.urlopen(page_url)
